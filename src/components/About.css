@@ -1,0 +1,166 @@
+.about {
+  min-height: 100vh;
+  padding: 6rem 0;
+  background-color: var(--black);
+  position: relative;
+}
+
+.about .container {
+  position: relative;
+}
+
+.about .container > div {
+  position: relative;
+}
+
+.about .section-label-vertical {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: var(--white);
+  text-transform: uppercase;
+  position: absolute;
+  left: -60px;
+  top: 0;
+  height: fit-content;
+  padding: 0;
+}
+
+.about-content {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.about-title {
+  margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.about-title h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.title-light {
+  font-weight: 300;
+  display: block;
+}
+
+.title-bold {
+  font-weight: 800;
+  display: block;
+}
+
+.about-quote {
+  margin-bottom: 4rem;
+  max-width: 600px;
+}
+
+.about-quote p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.quote-author {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.past-section {
+  margin-top: 3rem;
+}
+
+.past-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.02em;
+}
+
+.past-experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-card {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-gray);
+}
+
+.experience-card:last-child {
+  border-bottom: none;
+}
+
+.experience-header {
+  margin-bottom: 1rem;
+}
+
+.experience-header h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.experience-role {
+  font-size: 0.875rem;
+  color: var(--light-gray);
+  font-weight: 500;
+}
+
+.experience-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--light-gray);
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 0;
+  }
+
+  .about .section-label-vertical {
+    position: relative;
+    writing-mode: horizontal-tb;
+    left: 0;
+    padding: 0 0 1rem 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-gray);
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-title {
+    margin-bottom: 2rem;
+  }
+
+  .about-quote {
+    margin-bottom: 4rem;
+  }
+
+  .about-quote p {
+    font-size: 1rem;
+  }
+
+  .past-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .past-experiences {
+    gap: 2rem;
+  }
+}
